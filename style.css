@@ -86,8 +86,8 @@ img{
   height: 15%;
   opacity: .1;
   position: absolute;
-  top:240px;
-  left: 500px;
+  top:40%;
+  left: 40%;
 }
 .cont-carrusel picture{
   position: relative;
@@ -278,7 +278,6 @@ textarea{
   display: flex;
   justify-content: center;
   width: 50%;
-  position: absolute;
   top: -20px;
 }
 
@@ -312,17 +311,18 @@ textarea{
   text-shadow: 2px 2px 2px black;
 }
 .cont-faceboock{
-  background-color: #0866ff;
+  /*background-color: #0866ff;*/
   
 
 }
 .cont-faceboock i {
-  color: #0866ff;
-  background-color: white;
+  /*color: #0866ff;
+  background-color: white;*/
+  color: white;
 }
 
 .cont-instagram{
-  background: linear-gradient(to top right, #F58529 10%,#fEDA77 30% , #DD2A7B 50% , #8134AF 90% );
+  /*background: linear-gradient(to top right, #F58529 10%,#fEDA77 30% , #DD2A7B 50% , #8134AF 90% );*/
 }
 .cont-instagram i{
   color: white;
@@ -338,7 +338,7 @@ textarea{
 
 .cont-email{
   min-width: 300px;
-  background-color: red;
+  /*background-color: red;*/
 }
 .cont-email p{
   text-shadow: 2px 2px 2px black;
@@ -353,7 +353,7 @@ textarea{
 
 
 .cont-whatsapp{
-  background: linear-gradient( to right top,#075e54,#128c7e ,#25d366 );
+  /*background: linear-gradient( to right top,#075e54,#128c7e ,#25d366 );*/
   min-width: 300px;
 }
 
@@ -458,6 +458,9 @@ textarea{
   .form-contact form{
     width: 50%;
   }
+
+
+ 
 
   ::-webkit-scrollbar {
     display: none;
