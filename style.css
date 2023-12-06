@@ -13,6 +13,10 @@ a{
   text-decoration: none;
   color: black;
 }
+
+
+
+/*-------------------------- header--------------------------------*/
 .logo{
   width: 100px;
 }
@@ -21,6 +25,8 @@ a{
   object-fit: cover;
 }
 header{
+  z-index: 30;
+  position: fixed;
   padding: 0 1rem;
   display: flex;
   justify-content: space-between;
@@ -30,6 +36,9 @@ header{
   width: 100%;
   height: 48px;
 }
+
+
+/*--------------------------Iocons--------------------------------*/
 .fa-solid, .fa-brands, .fa-regular{
   height: 40px;
   width: 40px;
@@ -39,6 +48,10 @@ header{
   justify-content: center;
   color: black;
 }
+
+
+
+/*--------------------------Carrusel-imagenes---------------------------------*/
 
 
 
@@ -68,6 +81,20 @@ img{
   height: 100%;
   object-fit: cover;
 }
+.sello{
+  width: 25%;
+  height: 15%;
+  opacity: .1;
+  position: absolute;
+  top:240px;
+  left: 500px;
+}
+.cont-carrusel picture{
+  position: relative;
+}
+
+
+/*--------------------------Sec-about--------------------------------*/
 
 
 
@@ -84,8 +111,6 @@ img{
 .on{
   display: block;
 }
-
-
 .title{
   display: flex;
   justify-content: space-between;
@@ -96,6 +121,13 @@ img{
   width: 100%;
   border-bottom: 1px solid #c7c7c7;
 }
+.abaut div{
+  width: 100%;
+}
+
+
+
+/*--------------------------Sec-servis--------------------------------*/
 
 .servis{
   display: flex;
@@ -106,18 +138,6 @@ img{
 .servis h1{
   margin: 1rem;
 }
-
-.my-projects{
-  display: flex;
-  width: 100%;
-  height: 300px;
-
-  
-}
-.my-projects div{
-  width: 80%;
-}
-
 
 .cont-carrusel-servis{
   
@@ -136,7 +156,7 @@ img{
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
   flex: 1 0 auto;
   margin: 0 20px;
   background-color: rgb(99, 9, 9);
@@ -144,18 +164,58 @@ img{
   height: 280px;
   overflow: scroll;
 }
+
+.card h3{
+  margin: 1rem;
+}
 .img-servis{
   position: absolute;
   opacity: .3;
 }
+.card ul{
+  margin-left: 1.5rem;
+}
 
 
 
+/*--------------------Sec-Clientes----------------------*/
+
+.my-projects{
+  display: flex;
+  width: 100%;
+  margin-bottom: 4rem;
+
+  
+}
+.my-projects div{
+  width: 80%;
+
+}
 
 
+/*---------------------Footer---------------------------------*/
 
+.form-contact{
+  position: relative;
+  display: flex;
+  
+}
+.form-contact div{
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  
+  position: absolute;
+  object-fit: cover;
+
+  
+}
+form{
+  background-color: white;
+}
 footer{
   width: 100%;
+
 }
 
 
@@ -164,9 +224,13 @@ section{
   align-items: center;
   flex-direction: column;
 }
-h3{
+.form-contact h3{
+  color: white;
+  padding: 1rem;
   margin: 1rem;
-  text-align: center;
+  width: 80%;
+  background-color:rgba(99, 9, 9, 0.781);
+  border-radius: 8px;
 }
 form{
   position: relative;
@@ -195,36 +259,6 @@ textarea{
   padding: .5rem;
   height: 80px;
 }
-
-
-
-
-.cont-socials{
-
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  width: 50%;
-  position: absolute;
-  top: -20px;
-}
-
-.contact{
-  padding-top: 3rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: red 2px solid ;
-  margin: 3rem 1rem;
-}
-
-.data-contact{
-  display: flex;
-  flex-direction: column;align-items: center;
-  width: 100%;
-  margin: 1rem;
-}
 .send-button{
   color: white;
   background-color: rgb(223, 32, 32);
@@ -235,6 +269,107 @@ textarea{
   border-radius: 8px;
   padding: .5rem ;
 }
+
+
+
+
+.cont-socials{
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  position: absolute;
+  top: -20px;
+}
+
+.contact{
+  background-color: black;
+  padding-top: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.data-contact{
+  display: flex;
+  flex-direction: column;align-items: center;
+  width: 100%;
+  margin: 1rem;
+}
+.data-contact div{
+  margin: 1rem;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 4px 4px black;
+  border-radius: 8px;
+  
+}
+.cont-faceboock p{
+  color: white;
+  margin-left: 1rem;
+  text-shadow: 2px 2px 2px black;
+}
+.cont-faceboock{
+  background-color: #0866ff;
+  
+
+}
+.cont-faceboock i {
+  color: #0866ff;
+  background-color: white;
+}
+
+.cont-instagram{
+  background: linear-gradient(to top right, #F58529 10%,#fEDA77 30% , #DD2A7B 50% , #8134AF 90% );
+}
+.cont-instagram i{
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+
+.cont-instagram p{
+  text-shadow: 2px 2px 2px black;
+  color: white;
+  margin-left: 1rem;
+}
+
+.cont-email{
+  min-width: 300px;
+  background-color: red;
+}
+.cont-email p{
+  text-shadow: 2px 2px 2px black;
+  margin:auto;
+  color: white;
+}
+
+.cont-email i{
+  text-shadow: 2px 2px 2px black;
+  color: white;
+}
+
+
+.cont-whatsapp{
+  background: linear-gradient( to right top,#075e54,#128c7e ,#25d366 );
+  min-width: 300px;
+}
+
+.cont-whatsapp p{
+  text-shadow: 2px 2px 2px black;
+  color: white;
+  margin: auto;
+}
+
+.cont-whatsapp i{
+  text-shadow: 2px 2px 2px black;
+  color: white;
+}
+
+
+
 @keyframes cambio{
   0%{margin-left: 0;}
   30%{margin-left: 0;}
@@ -250,5 +385,81 @@ textarea{
 
 
 
+@media only screen and (min-width: 1068px){
 
 
+  h1{
+    font-size: 48px;
+  }
+
+  .abaut{
+    padding: 3rem;
+  }
+  .abaut div{
+    height: 50vh;
+    display: flex;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+  .title{
+    padding: 2rem;
+    width: 50%;
+    border: none;
+  }
+  .p{
+    padding: 2rem;
+    
+    width: 50%;
+    display: block;
+  }
+  .abaut div .fa-solid{
+    display: none;
+  }
+
+
+
+
+
+  .carrusel{
+    height: 100vh;
+  }
+
+
+
+  .servis{
+    padding: 3rem;
+  }
+
+
+  .my-projects{
+    flex-direction: row;
+  }
+
+  .my-projects h1{
+    padding: 3rem;
+    width: 50%;
+  }
+
+  .my-projects div{
+    width: 50%;
+    padding: 3rem;
+  }
+
+.form-contact{
+  flex-direction: row;
+  height: 100vh;
+}
+  .form-contact h3{
+    font-size: 48px;
+    height: 50%;
+    width: 50%;
+  }
+
+  .form-contact form{
+    width: 50%;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+}
