@@ -23,32 +23,32 @@
         </div>
       </section>
       <section class="abaut">
-        <div>
-        <h1 class="title">Sobre HecTec <i class="fa-solid fa-angle-down"></i></h1>
+        <div class="cont-parrafos">
+        <h1 class="title" data-animation="left">Sobre HecTec <i class="fa-solid fa-angle-down"></i></h1>
         
-        <p class="p">
+        <p class="p" data-animation="fade">
           Somos un grupo de profesionales dedicados al Mantenimiento Integral De Edificio y
           ofrecemos nuestros servicios acorde a las necesidades de cada cliente, a fin de obtener su
           satisfacción a través de calidad y eficiencia.Creamos nuestra firma con el objetivo de cubrir
           un conjunto de necesidades requeridas por empresas, particulares, consorcios de propietarios, comerciantes, colegios, etc., desde la           perspectiva profesional y basándonos en tres premisas fundamentales: servicio, calidad y precio.Tenemos una importante experiencia, pero lo más relevante es el factor humano del que disponemos y la capacitación de nuestros técnicos. Por estos motivos sabemos que estamos preparados para darle a usted la tranquilidad de un buen ervicio.     Deseamos contarlo entre nuestros más distinguidos clientes, brindándole para cada caso la mejor solución en trabajo, tiempo y costo.
         </p>
         </div>
-        <div>
-          <h1 class="title">Objetivo<i class="fa-solid fa-angle-down"></i></h1>
-        <p class="p"> Nuestro objetivo principal es la rápida solución de sus problemas. Para ello contamos con un equipo de profesionales de primer nivel en cada rubro. Contamos con una amplia gama de servicios para consorcios y edificios orientados al mantenimiento y reparación integral de los mismos</p>
+        <div class="cont-parrafos" >
+          <h1 class="title" data-animation="left">Objetivo<i class="fa-solid fa-angle-down"></i></h1>
+        <p class="p" data-animation="fade"> Nuestro objetivo principal es la rápida solución de sus problemas. Para ello contamos con un equipo de profesionales de primer nivel en cada rubro. Contamos con una amplia gama de servicios para consorcios y edificios orientados al mantenimiento y reparación integral de los mismos</p>
         </div>
       
-        <div>
-          <h1 class="title">Abono para empresa<i class="fa-solid fa-angle-down"></i></h1>
-        <p class="p">
+        <div class="cont-parrafos">
+          <h1 class="title" data-animation="left">Abono para empresa<i class="fa-solid fa-angle-down"></i></h1>
+        <p class="p" data-animation="fade">
           Nuestro equipo brindará la tranquilidad que su empresa u organización necesita para que usted
           se pueda dedicar a su actividad, sin perder tiempo y recursos en mantenimiento y mejoras.
         </p>
         </div>
       </section>
       <section class="servis">
-        <h1>Servicios</h1>
-        <div class="cont-carrusel-servis">
+        <h1 class="title" data-animation="left">Servicios</h1>
+        <div class="cont-carrusel-servis" data-animation="show">
           <div class="card">
             <img class="img-servis" src="https://media.istockphoto.com/id/183579489/es/foto/renovaci%C3%B3n-de-la-casa.jpg?s=1024x1024&w=is&k=20&c=Z0H68COezIgoWcSy7m1sbl82X5DUNVrW7NOZLsJwMls=" alt="">
             <h3>pintura</h3>
@@ -206,28 +206,42 @@
         </div>
       </section>
       <section class="my-projects">
-        <h1>Nuestros clientes</h1>
-        <div><img src="https://play-lh.googleusercontent.com/BplmJK9rjNag8v1nKcuoHFmJnp8WqTXUbHIyhwBZ6MQGN21v_iqUZChlXqnwx6PMJoo" alt=""></div>
+        <h1 class="title" data-animation="left">Nuestros clientes</h1>
+        <div class="img-clients" data-animation="show"><img src="https://play-lh.googleusercontent.com/BplmJK9rjNag8v1nKcuoHFmJnp8WqTXUbHIyhwBZ6MQGN21v_iqUZChlXqnwx6PMJoo" alt=""></div>
       </section>
     </main>
     <footer>
-      <section class="form-contact">
-        <div><img class="background-form-contact" src="images/img-fondo-form.jpg" alt=""></div>
-        <h3>si tiene alguna duda complete el formulario y en breve le responderemos </h3>
-        <form action="">
-          
-          <input type="text" placeholder="Nombre">
-          
-          
-          
-          <input type="email" name="email" placeholder="Email">
-          
-          
+      <section class="cont-form">
+        <div class="fondo"><img class="background-form-contact" src="images/img-fondo-form.jpg" alt=""></div>
+        <h3 class="title"  data-animation="show">si tiene alguna duda complete el formulario y en breve le responderemos </h3>
+
+        <form class="form" data-animation="up" >
+          <div class="box-input">
+            <input class="input" type="text" required>
+          <label class="lbl-nombre">
+            <span class="text-nomb">
+              Nombre
+            </span>
+          </label>
+          </div>
+          <div class="box-input">
+            <input class="input" type="text" required>
+          <label class="lbl-nombre">
+            <span class="text-nomb">
+              Email
+            </span>
+          </label>
+          </div>
           <textarea name="" id="" cols="30" rows="10" placeholder="asunto"></textarea>
           
 
           <button class="send-button" type="submit">Enviar</button>
+    
+          
         </form>
+          
+          
+          
       </section>
        
       <div class="contact">
@@ -242,6 +256,7 @@
         </div>
       </div>
     </footer>
+
     <script src="index.js"></script>
     
   </body>
