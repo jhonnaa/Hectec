@@ -215,9 +215,9 @@
         <div class="fondo"><img class="background-form-contact" src="images/img-fondo-form.jpg" alt=""></div>
         <h3 class="title"  data-animation="show">si tiene alguna duda complete el formulario y en breve le responderemos </h3>
 
-        <form class="form" data-animation="up" >
+        <form class="form" data-animation="up"  action="https://formsubmit.co/hec.tec.n1@gmail.com@gmail.com" method="POST">
           <div class="box-input">
-            <input class="input" type="text" required>
+            <input class="input" name="Nombre" type="text" required>
           <label class="lbl-nombre">
             <span class="text-nomb">
               Nombre
@@ -225,18 +225,20 @@
           </label>
           </div>
           <div class="box-input">
-            <input class="input" type="text" required>
+            <input class="input" name="Email" type="text" required>
           <label class="lbl-nombre">
             <span class="text-nomb">
               Email
             </span>
           </label>
           </div>
-          <textarea name="" id="" cols="30" rows="10" placeholder="asunto"></textarea>
+          <textarea name="Asunto" id="" cols="30" rows="10" placeholder="asunto"></textarea>
           
 
           <button class="send-button" type="submit">Enviar</button>
-    
+
+          <input type="hidden" name="_next" value="">
+          <input type="hidden" name="_captcha" value="false">
           
         </form>
           
