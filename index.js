@@ -77,3 +77,35 @@ parrafos.forEach(parrafo=>{
     observerCarrusel.observe(servis)
     observerClients.observe(clientes)
     observerForm.observe(form)
+
+
+
+
+  
+
+
+
+
+//-----------------------------------email------------------
+
+
+const btn = document.getElementById('button');
+const mensaje = document.querySelector('.cont-alert')
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_zm2bjvs';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      mensaje.style.display = "flex"
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
