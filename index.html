@@ -8,6 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400&family=Mitr&family=Roboto:wght@300&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a27e89e8fa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"  href="style.css">
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('pioE_ozU201dKsK-g')
+</script>
   </head>
   <body>
     <header>
@@ -215,33 +221,44 @@
         <div class="fondo"><img class="background-form-contact" src="images/img-fondo-form.jpg" alt=""></div>
         <h3 class="title"  data-animation="show">si tiene alguna duda complete el formulario y en breve le responderemos </h3>
 
-        <form class="form" data-animation="up"  action="https://formsubmit.co/hec.tec.n1@gmail.com@gmail.com" method="POST">
-          <div class="box-input">
-            <input class="input" name="Nombre" type="text" required>
-          <label class="lbl-nombre">
+        <form id="form" class="form" data-animation="up" action="/index.html">
+          <div class="box-input field">
+            <input class="input" name="from_name" type="text" required id="from_name">
+          <label for="from_name" class="lbl-nombre">
             <span class="text-nomb">
               Nombre
             </span>
           </label>
           </div>
-          <div class="box-input">
-            <input class="input" name="Email" type="text" required>
-          <label class="lbl-nombre">
+          <div class="box-input field">
+            <input class="input" name="email_id" type="text" required id="email_id">
+          <label for="email_id" class="lbl-nombre">
             <span class="text-nomb">
               Email
             </span>
           </label>
           </div>
-          <textarea name="Asunto" id="" cols="30" rows="10" placeholder="asunto"></textarea>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="asunto"></textarea>
           
 
-          <button class="send-button" type="submit">Enviar</button>
+          <button  class="send-button" type="submit" id="button" value="send Email">Enviar</button>
 
-          <input type="hidden" name="_next" value="">
-          <input type="hidden" name="_captcha" value="false">
+          
           
         </form>
+
+
+        
+        <div class="cont-alert" >
+          <form class="alert" action="/index.html">
+            <h5>
+              Tu mensaje fue enviado! Muchas gracias por comunicarte con nosotros en breve te daremos una respuesta
+            </h5>
+
+            <button class="send-button" type="submit"> Continuar</button>
+          </form>
           
+        </div>
           
           
       </section>
@@ -257,7 +274,9 @@
           <div class="cont-brands cont-whatsapp"><i class="fa-brands fa-whatsapp"></i><p> +54 9 11 2793-1640</p></div>
         </div>
       </div>
+      
     </footer>
+
 
     <script src="index.js"></script>
     
